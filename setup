@@ -40,6 +40,15 @@ echo "Installed Node Version:";
 node -v;
 
 
+# install global node packages
+echo "\n⬢ \033[1mInstalling Global Node Modules…\033[0m";
+echo "(using npm)\n";
+
+npm i -g eslint
+
+echo "Installed global node modules:" && npm list -g --depth=0;
+
+
 # configurations
 echo "\n⚙️ \033[1mInstalling configurations…\033[0m";
 echo "(These set up your command line to work and look nicer)\n";

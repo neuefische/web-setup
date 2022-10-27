@@ -64,6 +64,10 @@ It will also install the following desktop applications using Homebrew:
 
 Using fnm the script will install the latest [LTS](https://github.com/nodejs/release#release-schedule) version of [Node.js](https://nodejs.org/en/) a JavaScript runtime.
 
+The script will use npm to install the following packages globally:
+
+- [eslint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code
+
 The script will copy [zsh configuration files](/config) from this repository to configure zsh. It will also setup [shell-integration for iTerm](https://iterm2.com/documentation-shell-integration.html).
 
 </details>
