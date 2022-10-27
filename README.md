@@ -13,15 +13,15 @@ Find and run the program "Terminal". This is a program that allows you to run co
 Copy the command you want to run and paste it into the Terminal.  
 Run it by pressing <kbd>Enter</kbd>.
 
-> 💡 In case of any Error, carefully read the error text and google for help. Ask a coach for help.
+> 💡 In case of any errors, carefully read the error text and google for help. Ask a coach for help.
 
 ### Which commands should I run?
 
-Begin with the _General Setup_. You can optionally run the _Setting nicer macOS Configurations_ script at any time.
+Begin with the [_General Setup_](#-general-setup). You can optionally run the [_Setting nicer macOS Configurations_](#-setting-nicer-macos-configurations) script at any time.
 
-The _Setting up git and GitHub_ script will be used once you'll need to work with git in the command line.
+The [_Setting up git and GitHub_](#-setting-up-git-and-github) script will be used once you'll need to work with git in the command line.
 
-The _Setting up MongoDB_ script will be used once you'll need to work with MongoDB.
+The [_Setting up MongoDB_](#-setting-up-mongodb) script will be used once you'll need to work with MongoDB.
 
 > 💡 You can check the "What does this do?" sections to learn what each script does in detail.
 
@@ -94,7 +94,7 @@ The script will change the following macOS settings:
 - set key repeat to feel more responsive
 - set show all files in Finder (including hidden ones)
 - make home folder the default location in Finder
-- disable automatic spelling correction\n
+- disable automatic spelling correction
 
 > 💡 If you want only some of the settings to be applied, copy the relevant lines from the [setup script](/setup-macos) and run them in the Terminal.
 >
