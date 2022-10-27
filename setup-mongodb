@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+# Install MongoDB
+echo "\n🍃 \033[1mSetting up MongoDB…\033[0m";
+echo "(Please follow the instructions in the terminal)\n";
+
+brew tap mongodb/brew &&
+brew update &&
+brew install mongodb-community &&
+brew services start mongodb-community &&
+brew install --cask mongodb-compass
+
+echo "\n✨ \033[1m…all done!\033[0m";
+echo "You now have MongoDB installed and running.\n";

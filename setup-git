@@ -1,0 +1,20 @@
+#!/usr/bin/env zsh
+echo "\n🐙 \033[1mSetting up git and GitHub…\033[0m";
+echo "(Please follow the instructions in the terminal)\n";
+
+vared -p 'Enter your full name (e.g. John Doe): ' -c fullname &&
+git config --global user.name $fullname &&
+vared -p 'Enter the e-mail you use for GitHub (john@johndoe.com): ' -c email &&
+git config --global user.email $email;
+git config --global pull.ff "only";
+git config --global init.defaultBranch main
+ssh-keygen -t ed25519 -C $email;
+eval "$(ssh-agent -s)";
+echo "Host *\n    AddKeysToAgent yes\n    UseKeychain yes\n    IdentityFile ~/.ssh/id_ed25519" > ~/.ssh/config;
+ssh-add -K ~/.ssh/id_ed25519;
+ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts # add github.com to the list of known hosts
+echo "------------------------\n\nPlease follow the instructions:\n-------------------\n" &&
+gh auth login;
+
+echo "\n✨ \033[1m…all done!\033[0m";
+echo "You can now use git with your GitHub account.\n";

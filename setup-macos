@@ -1,0 +1,46 @@
+#!/usr/bin/env zsh
+# Set some macOS settings
+
+echo "\n🍏 \033[1mSetting nicer macOS configurations…\033[0m";
+echo "(You will be promted to enter your password)\n";
+
+# remove disk eject warning (it's 2022, USB sticks can handle it)
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd
+
+# set dock autohide timings
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-time-modifier -float 0.1
+defaults write com.apple.dock autohide-delay -float 0
+
+# make hidden apps transparent
+defaults write com.apple.dock showhidden -bool TRUE
+
+# remove recent apps from dock
+defaults write com.apple.dock show-recents -bool FALSE
+
+# set key repeat
+defaults write -g KeyRepeat -int 4
+defaults write -g InitialKeyRepeat -int 25
+
+# show all files
+defaults write com.apple.finder AppleShowAllFiles true
+
+# make home folder default location
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+
+# disable autocorrection
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+
+# restart Dock and Finder
+killall Dock
+killall Finder
+
+echo "\n✨ \033[1m…all done!\033[0m";
+echo "  ✔ disabled disk eject warning";
+echo "  ✔ set dock autohide timings to feel more responsive";
+echo "  ✔ made hidden apps transparent in the dock";
+echo "  ✔ removed recent apps from the dock";
+echo "  ✔ set key repeat to feel more responsive";
+echo "  ✔ set show all files in Finder (including hidden ones)";
+echo "  ✔ made home folder the default location in Finder";
+echo "  ✔ disabled automatic spelling correction\n";

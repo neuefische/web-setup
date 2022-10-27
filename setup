@@ -1,0 +1,58 @@
+#!/usr/bin/env zsh
+
+# Install homebrew
+echo "\n🍺 \033[1mInstalling Homebrew…\033[0m";
+echo "(that's a package manager for macOS)\n";
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
+
+
+# Install common tools
+echo "\n💻 \033[1mInstalling Command Line Tools…\033[0m";
+echo "(using the Homebrew package manager)\n";
+
+for x in gh git antigen zsh-completions exa tree fnm; do brew install $x; done;
+brew install fzf && $(brew --prefix)/opt/fzf/install;
+
+echo "Installed command line tools:" && brew list --formulae -1;
+
+
+# Install macOS apps
+echo "\n🖱 \033[1mInstalling macOS Apps…\033[0m";
+echo "(using the Homebrew package manager)\n";
+
+brew tap homebrew/cask-versions;
+for x in iterm2 visual-studio-code rectangle quicklook-json; do brew install --cask $x; done;
+brew install --cask firefox-developer-edition --lang=en-US;
+
+echo "Installed macOS apps:" && brew list --cask -1;
+
+
+# Set up node lts
+echo "\n⬢ \033[1mInstalling Node LTS…\033[0m";
+echo "(Node is a JavaScript runtime used for local development)\n";
+
+eval "$(fnm env)";
+fnm install lts-latest;
+fnm alias lts-latest default;
+fnm use default;
+echo "Installed Node Version:";
+node -v;
+
+
+# configurations
+echo "\n⚙️ \033[1mInstalling configurations…\033[0m";
+echo "(These set up your command line to work and look nicer)\n";
+
+# iTerm shell integration
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+
+# Copy configuration files
+curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/configs/.zshrc > ~/.zshrc;
+curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/configs/.aliases > ~/.aliases;
+curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/configs/.p10k.zsh > ~/.p10k.zsh;
+
+echo "\n✨ \033[1m…all done!\033[0m";
+echo "You can now switch to the iTerm Terminal by pressing \033[1mcommand\033[0m + \033[1mspace\033[0m and search for \"iTerm\".\n";
+echo "We have some suggestions for nicer macOS settings which you can apply by running:";
+echo "\033[0;36mzsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-macos)\033[0m\n";
