@@ -8,12 +8,12 @@ They are designed for the neue fische web development course.
 
 You should have the latest macOS installed. To make sure, click on the apple logo at the top left, go to "About this Mac" and click "Software Update". Install any missing updates.
 
-Find and run the program "Terminal". This is a program that allows you to run commands on your computer.
+Find and run the program "Terminal". This is a program that allows you to run commands on your computer. You can press <kbd>Command</kbd> + <kbd>Space</kbd> to open Spotlight. Type in the program's name and press <kbd>Enter</kbd>
 
 Copy the command you want to run and paste it into the Terminal.  
 Run it by pressing <kbd>Enter</kbd>.
 
-> 💡 In case of any errors, carefully read the error text and google for help. Ask a coach for help.
+> 💡 In case of any errors, carefully read the error text and google for help. Ask a coach for help if you can't find a solution with your own research.
 
 ### Which commands should I run?
 

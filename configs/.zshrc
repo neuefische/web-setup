@@ -31,10 +31,6 @@ antigen bundle common-aliases
 antigen bundle fasd
 antigen bundle zsh-users/zsh-history-substring-search ./zsh-history-substring-search.zsh
 
-# NVM bundle
-export NVM_LAZY_LOAD=true
-antigen bundle lukechilds/zsh-nvm
-
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
