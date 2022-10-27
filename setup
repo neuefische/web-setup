@@ -53,6 +53,6 @@ curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/configs/.ali
 curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/configs/.p10k.zsh > ~/.p10k.zsh;
 
 echo "\n✨ \033[1m…all done!\033[0m";
-echo "You can now switch to the iTerm Terminal by pressing \033[1mCommand\033[0m + \033[1mSpace\033[0m and search for \"iTerm\".\n";
+echo "You can now switch to the iTerm Terminal by pressing \033[1m⌘\033[0m + \033[1mSpace\033[0m and search for \"iTerm\".\n";
 echo "We have some suggestions for nicer macOS settings which you can apply by running:";
 echo "\033[0;36mzsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-macos)\033[0m\n";
