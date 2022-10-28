@@ -81,7 +81,7 @@ Some of the default macOS settings are not very optimized for productivity. This
 > 💡 Enter your macOS users password if you're asked for it and confirm with <kbd>Enter</kbd>. You won't see any characters while typing, but it's still working.
 
 ```sh
-zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-macos)
+zsh <(curl -s https://raw.githubusercontent.com/neuefische/web-setup/main/setup-macos)
 ```
 
 <details>
