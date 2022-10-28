@@ -13,7 +13,8 @@ eval "$(ssh-agent -s)";
 echo "Host *\n    AddKeysToAgent yes\n    UseKeychain yes\n    IdentityFile ~/.ssh/id_ed25519" > ~/.ssh/config;
 ssh-add -K ~/.ssh/id_ed25519;
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts # add github.com to the list of known hosts
-echo "------------------------\n\nPlease follow the instructions:\n-------------------\n" &&
+
+echo "Authenticating with GitHub.com…";
 gh auth login;
 
 echo "\n✨ \033[1m…all done!\033[0m";
