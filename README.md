@@ -34,7 +34,7 @@ Installs desktop applications, command line tools and sets up the shell.
 > If you are asked to enable fuzzy auto-completion, enable key bindings and update shell configuration files confirm by pressing <kbd>Enter</kbd>.
 
 ```sh
-zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup)
+zsh <(curl -s https://raw.githubusercontent.com/neuefische/web-setup/main/setup)
 ```
 
 <details>
@@ -119,7 +119,7 @@ Sets up git and connects it to GitHub.
 > Choose **`ssh`** as your preferred connection method. Login and authenticate to GitHub using the browser. (The device code is found in the Terminal.)
 
 ```sh
-zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git)
+zsh <(curl -s https://raw.githubusercontent.com/neuefische/web-setup/main/setup-git)
 ```
 
 <details>
@@ -138,7 +138,7 @@ _This script will be used once you'll need to work with MongoDB._
 Installs MongoDB, MongoDB Compass and starts the MongoDB background service.
 
 ```sh
-zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-mongodb)
+zsh <(curl -s https://raw.githubusercontent.com/neuefische/web-setup/main/setup-mongodb)
 ```
 
 <details>
