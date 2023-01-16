@@ -5,8 +5,8 @@ echo "(Please follow the instructions in the terminal)\n";
 
 brew tap mongodb/brew &&
 brew update &&
-brew install mongodb-community &&
-brew services start mongodb-community &&
+brew install mongodb-community@5.0 &&
+brew services start mongodb-community@5.0 &&
 brew install --cask mongodb-compass
 
 echo "\n✨ \033[1m…all done!\033[0m";
