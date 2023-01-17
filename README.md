@@ -151,3 +151,22 @@ The script will use Homebrew to install [MongoDB](https://www.mongodb.com/) and 
 It will also start the MongoDB service.
 
 </details>
+
+<details>
+<summary>Mongo installation problems?</summary>
+
+Using this script under MacOS Ventura on a M1 MacBook might be causing problems.
+We encounterd several and here are a list of possible solutions:
+
+```
+hdiutil attach failed - operation timed out on the mongodb-compass installation
+```
+
+- just run `brew install mongodb-compass` again
+
+```
+Bootstrap failed: 5: Input/output error
+```
+
+- [find answer here](https://github.com/neuefische/web-setup/issues/4)
+</details>
