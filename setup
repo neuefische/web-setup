@@ -7,6 +7,83 @@ echo "(that's a package manager for macOS)\n";
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 
 
+# First check OS.
+OS="$(uname)"
+if [[ "${OS}" == "Linux" ]]
+then
+  HOMEBREW_ON_LINUX=1
+elif [[ "${OS}" == "Darwin" ]]
+then
+  HOMEBREW_ON_MACOS=1
+else
+  abort "Homebrew is only supported on macOS and Linux."
+fi
+
+# Required installation paths.
+case "${SHELL}" in
+  */bash*)
+    if [[ -r "${HOME}/.bash_profile" ]]
+    then
+      shell_profile="${HOME}/.bash_profile"
+    else
+      shell_profile="${HOME}/.profile"
+    fi
+    ;;
+  */zsh*)
+    shell_profile="${HOME}/.zprofile"
+    ;;
+  *)
+    shell_profile="${HOME}/.profile"
+    ;;
+esac
+
+if [[ -n "${HOMEBREW_ON_MACOS-}" ]]
+then
+  UNAME_MACHINE="$(/usr/bin/uname -m)"
+
+  if [[ "${UNAME_MACHINE}" == "arm64" ]]
+  then
+    # On ARM macOS, this script installs to /opt/homebrew only
+    HOMEBREW_PREFIX="/opt/homebrew"
+    HOMEBREW_REPOSITORY="${HOMEBREW_PREFIX}"
+  else
+    # On Intel macOS, this script installs to /usr/local only
+    HOMEBREW_PREFIX="/usr/local"
+    HOMEBREW_REPOSITORY="${HOMEBREW_PREFIX}/Homebrew"
+  fi
+  HOMEBREW_CACHE="${HOME}/Library/Caches/Homebrew"
+
+  STAT_PRINTF=("stat" "-f")
+  PERMISSION_FORMAT="%A"
+  CHOWN=("/usr/sbin/chown")
+  CHGRP=("/usr/bin/chgrp")
+  GROUP="admin"
+  TOUCH=("/usr/bin/touch")
+  INSTALL=("/usr/bin/install" -d -o "root" -g "wheel" -m "0755")
+else
+  UNAME_MACHINE="$(uname -m)"
+
+  # On Linux, this script installs to /home/linuxbrew/.linuxbrew only
+  HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
+  HOMEBREW_REPOSITORY="${HOMEBREW_PREFIX}/Homebrew"
+  HOMEBREW_CACHE="${HOME}/.cache/Homebrew"
+
+  STAT_PRINTF=("stat" "--printf")
+  PERMISSION_FORMAT="%a"
+  CHOWN=("/bin/chown")
+  CHGRP=("/bin/chgrp")
+  GROUP="$(id -gn)"
+  TOUCH=("/bin/touch")
+  INSTALL=("/usr/bin/install" -d -o "${USER}" -g "${GROUP}" -m "0755")
+fi
+
+# run the last three required steps from the brew installation script
+echo "Running the three lines requested above automatically"
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> ${shell_profile}
+echo eval "\"\$(${HOMEBREW_PREFIX}/bin/brew shellenv)"\" >> ${shell_profile}
+eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
+echo "Done!"
+
 # Install common tools
 echo "\n💻 \033[1mInstalling Command Line Tools…\033[0m";
 echo "(using the Homebrew package manager)\n";
