@@ -21,8 +21,6 @@ Begin with the [_General Setup_](#-general-setup). You can optionally run the [_
 
 The [_Setting up git and GitHub_](#-setting-up-git-and-github) script will be used once you'll need to work with git in the command line.
 
-The [_Setting up MongoDB_](#-setting-up-mongodb) script will be used once you'll need to work with MongoDB.
-
 > 💡 You can check the "What does this do?" sections to learn what each script does in detail.
 
 ## 💻 General Setup
@@ -129,44 +127,4 @@ This command will download the [`setup-git` script](/setup-git) from GitHub and 
 
 The script will setup git and create a new ssh key for GitHub. It will also add the key to your GitHub account using the GitHub CLI.
 
-</details>
-
-## 🍃 Setting up MongoDB
-
-_This script will be used once you'll need to work with MongoDB._
-
-Installs MongoDB, MongoDB Compass and starts the MongoDB background service.
-
-```sh
-zsh <(curl -s https://raw.githubusercontent.com/neuefische/web-setup/main/setup-mongodb)
-```
-
-<details>
-<summary>What does this do?</summary>
-
-This command will download the [`setup-mongodb` script](/setup-mongodb) from GitHub and run it on your computer.
-
-The script will use Homebrew to install [MongoDB](https://www.mongodb.com/) and [MongoDB Compass](https://www.mongodb.com/products/compass).
-
-It will also start the MongoDB service.
-
-</details>
-
-<details>
-<summary>Mongo installation problems?</summary>
-
-Using this script under MacOS Ventura on a M1 MacBook might be causing problems.
-We encounterd several and here are a list of possible solutions:
-
-```
-hdiutil attach failed - operation timed out on the mongodb-compass installation
-```
-
-- just run `brew install mongodb-compass` again
-
-```
-Bootstrap failed: 5: Input/output error
-```
-
-- [find answer here](https://github.com/neuefische/web-setup/issues/4)
 </details>
