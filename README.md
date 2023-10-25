@@ -134,4 +134,4 @@ The script will setup git and create a new ssh key for GitHub. It will also add 
 A video showing the setup process can be found on YouTube:
 
 [<img src="https://i9.ytimg.com/vi/oSbdusMN0bA/maxresdefault.jpg?v=65391ada&sqp=CNy35KkG&rs=AOn4CLDEmw0J4TRmsRl6-PZ-d2uReHjkvQ" width="480" alt="Video Thumbnail – Mac Setup 101"
-/>](https://www.youtube.com/embed/oSbdusMN0bA)
+/>](https://youtu.be/oSbdusMN0bA)
