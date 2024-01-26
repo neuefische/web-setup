@@ -51,7 +51,7 @@
 3. Skip setting up a passphrase by pressing `enter` twice when asked to enter a passphrase.
 4. Start the ssh-agent with this command:
    ```bash
-   eval "$(ssh-agend -s)"
+   eval "$(ssh-agent -s)"
    ```
    The agent pid should be printed to the terminal
 5. Add the newly created key to your ssh-agent
