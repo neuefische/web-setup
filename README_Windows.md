@@ -1,3 +1,7 @@
+## 📝 Install VSCode
+1. [Download](https://code.visualstudio.com/) visual studio code.
+2. Execute the installation file.
+
 ## 💻 Install Git and Bash
 
 1. [Download](https://gitforwindows.org) git-bash.
