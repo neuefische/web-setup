@@ -4,9 +4,9 @@
 2. Run the installation file:
    1. On the GNU Public License Page continue to the next page.
    2. Leave the installation path as is, then continue.
-   3. Tick the checkboxes `check daily for Git for Windows updates` and `Andd a Git Bash Profile to Windows Terminal` then continue.
+   3. Tick the checkboxes `check daily for Git for Windows updates` and `Add a Git Bash Profile to Windows Terminal` then continue.
    4. Leave the Start Menu Folder as is and continue.
-   5. Choose `Use Vim` as your default editor and conintue.
+   5. Choose `Use Vim` as your default editor and continue.
    6. Choose `Override the default branch name for new repositories` and choose the name "main". Then continue.
    7. Choose the default setting `Git from the command line and also from 3rd-party software` and continue.
    8. Choose `Use bundled OpenSSH` and continue.
