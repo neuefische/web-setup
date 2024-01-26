@@ -43,34 +43,29 @@
 
 ## 🔐 Setup SSH for Github
 
-1. In your git-bash terminal, execute the following command. Make sure to replace the email with your email address:
+### Setup Git Config and generate SSH Keys
+
+1. In your git-bash terminal, execute the following command and follow the instructions:
    ```bash
-   ssh-keygen -t ed25519 -C "your_email@example.com"
+   bash <(curl -s https://raw.githubusercontent.com/neuefische/web-setup/main/ssh-setup.bash)
    ```
-2. Accept the default storage location for your ssh keys ('~/.ssh/id_ed25519') by pressing `enter`.
-3. Skip setting up a passphrase by pressing `enter` twice when asked to enter a passphrase.
-4. Start the ssh-agent with this command:
-   ```bash
-   eval "$(ssh-agent -s)"
-   ```
-   The agent pid should be printed to the terminal
-5. Add the newly created key to your ssh-agent
-   ```bash
-   ssh-add ~/.ssh/id_ed25519
-   ```
-6. Go to the [GitHub SSH Keys Settings Page](https://github.com/settings/keys) and click on `new SSH key`
-7. Add a fitting title for your current computer (e.g. Windows Lenovo or Windows Desktop)
-8. Go back to your bash terminal. Print the public key to the terminal:
-   ```bash
-   cat ~/.ssh/id_ed25519.pub
-   ```
-9. Copy the public key (starting with "ssh-ed" and ending with your email) and paste it into the `key` input field.
-10. Press `Add SSH key` and check that the key was added to your SSK Key list.
-11. Check if the SSH connection works by cloning a repository from github:
+2. Enter your full name and email address.
+3. Accept the default storage location for your ssh keys ('~/.ssh/id_ed25519') by pressing `enter`.
+4. Skip setting up a passphrase by pressing `enter` twice when asked to enter a passphrase.
+5. The public ssh key should now be printed to your terminal.
+
+### Add the public SSH key to Github
+
+1. Go to the [GitHub SSH Keys Settings Page](https://github.com/settings/keys) and click on `new SSH key`
+2. Add a fitting title for your current computer (e.g. Windows Lenovo or Windows Desktop)
+
+3. Copy the public key you got from the setup script (starting with "ssh-ed" and ending with your email) and paste it into the `key` input field. (you can always get the public key by using `cat ~/.ssh/id_ed25519.pub`)
+4. Press `Add SSH key` and check that the key was added to your SSK Key list.
+5. Check if the SSH connection works by cloning a repository from github:
 
 ```bash
 git clone git@github.com:neuefische/web-test-ssh.git
 ```
 
-12. If you are asked to add github.com to the trusted hosts enter "yes" and press `enter`.
-13. If a new folder called "web-test-ssh" was created your SSH setup was successful! :tada:
+6. If you are asked to add github.com to the trusted hosts enter "yes" and press `enter`.
+7. If a new folder called "web-test-ssh" was created your SSH setup was successful! :tada:
