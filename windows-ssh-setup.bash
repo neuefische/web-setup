@@ -7,6 +7,10 @@ eval "$(ssh-agent -s)" &&
 ssh-add ~/.ssh/id_ed25519 &&
 echo
 echo Success!
-echo "SSH Keys generated. Please open https://github.com/settings/keys and add the following public key:"
+echo SSH Keys generated. Please open https://github.com/settings/keys and add the following public key:
+echo
+echo "--v-- public key --v--"
 echo
 cat ~/.ssh/id_ed25519.pub
+echo
+echo "--^-- public key --^--"
