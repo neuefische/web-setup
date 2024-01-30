@@ -88,7 +88,7 @@ echo "Done!"
 echo "\n💻 \033[1mInstalling Command Line Tools…\033[0m";
 echo "(using the Homebrew package manager)\n";
 
-for x in gh git antigen zsh-completions exa tree fnm; do brew install $x; done;
+for x in gh git antigen zsh-completions tree fnm; do brew install $x; done;
 brew install fzf && $(brew --prefix)/opt/fzf/install;
 
 echo "Installed command line tools:" && brew list --formulae -1;
