@@ -66,7 +66,7 @@ The script will use npm to install the following packages globally:
 
 - [eslint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code
 
-The script will copy [zsh configuration files](/config) from this repository to configure zsh. It will also setup [shell-integration for iTerm](https://iterm2.com/documentation-shell-integration.html).
+The script will copy [zsh configuration files](/configs) from this repository to configure zsh. It will also setup [shell-integration for iTerm](https://iterm2.com/documentation-shell-integration.html).
 
 </details>
 
