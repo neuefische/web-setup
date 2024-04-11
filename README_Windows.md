@@ -45,10 +45,6 @@
    - `node -v` and
    - `npm -v`.
 5. In the terminal, the respective versions of `node.js` and `npm` should be displayed, for example "v20.10.0" and "10.2.4".
-6. Install the tool "ghcd" by using the following command in your terminal:
-   ```bash
-   npm install -g ghcd@latest
-   ```
 
 ## 🔐 Setup SSH for Github
 
