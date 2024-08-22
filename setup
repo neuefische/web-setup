@@ -121,7 +121,7 @@ node -v;
 echo "\n⬢ \033[1mInstalling Global Node Modules…\033[0m";
 echo "(using npm)\n";
 
-npm i -g eslint
+npm i -g eslint@8
 
 echo "Installed global node modules:" && npm list -g --depth=0;
 

@@ -1,6 +1,7 @@
 # Setup node packages
 echo  Installing node dependencies...
 npm install -g win-node-env ghcd@latest
+npm i -g eslint@8
 echo ✅ Done!\n
 
 # Configuring git
