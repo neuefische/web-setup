@@ -1,8 +1,3 @@
-## 📝 Install VSCode
-
-1. [Download](https://code.visualstudio.com/) visual studio code.
-2. Execute the installation file.
-
 ## 💻 Install Git and Bash
 
 1. [Download](https://gitforwindows.org) git-bash.
@@ -74,3 +69,9 @@ git clone git@github.com:neuefische/web-test-ssh.git
 
 6. If you are asked to add github.com to the trusted hosts enter "yes" and press `enter`.
 7. If a new folder called "web-test-ssh" was created your SSH setup was successful! :tada:
+
+## Setting up VS Code
+
+1. [Download](https://code.visualstudio.com/) visual studio code.
+2. Execute the installation file.
+3. Follow [these instructions](./vscode-setup.md) to prepare VS Code for our bootcamp.

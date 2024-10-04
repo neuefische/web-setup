@@ -135,3 +135,7 @@ A video showing the setup process can be found on YouTube:
 
 [<img src="https://img.youtube.com/vi/oSbdusMN0bA/maxresdefault.jpg" width="480" alt="Video Thumbnail – Mac Setup 101"
 />](https://youtu.be/oSbdusMN0bA)
+
+## Setting up VS Code
+
+Follow [these instructions](./vscode-setup.md) to prepare VS Code for our bootcamp.
