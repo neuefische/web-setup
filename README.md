@@ -70,40 +70,6 @@ The script will copy [zsh configuration files](/configs) from this repository to
 
 </details>
 
-## 🍏 Setting nicer macOS Configurations
-
-_This script is optional, but it might make your macOS experience nicer._ 🤓
-
-Some of the default macOS settings are not very optimized for productivity. This script will change some of them.
-
-> 💡 Enter your macOS users password if you're asked for it and confirm with <kbd>Enter</kbd>. You won't see any characters while typing, but it's still working.
-
-```sh
-zsh <(curl -s https://raw.githubusercontent.com/neuefische/web-setup/main/setup-macos)
-```
-
-<details>
-<summary>What does this do?</summary>
-
-This command will download the [`setup-macos` script](/setup-macos) from GitHub and run it on your computer.
-
-The script will change the following macOS settings:
-
-- disable disk eject warning
-- set dock autohide timings to feel more responsive
-- make hidden apps transparent in the dock
-- remove recent apps from the dock
-- set key repeat to feel more responsive
-- set show all files in Finder (including hidden ones)
-- make home folder the default location in Finder
-- disable automatic spelling correction
-
-> 💡 If you want only some of the settings to be applied, copy the relevant lines from the [setup script](/setup-macos) and run them in the Terminal.
->
-> Don't forget to run `killall Dock && killall Finder` (or restart you computer) to apply the changes.
-
-</details>
-
 ## 🐙 Setting up git and GitHub
 
 _This script will be used once you'll need to work with git in the command line._
@@ -129,13 +95,17 @@ The script will setup git and create a new ssh key for GitHub. It will also add 
 
 </details>
 
+## Only On-Site: Setting up ghcd Tool
+
+We use the comand line tool `ghcd` for downloading the challenges. On site cohorts need to set it up with the instructions below. For remote cohorts it should work out of the box, but if you run into issues follow [these instructions](./github-token-setup.md).
+
+## Setting up VS Code
+
+Follow [these instructions](./vscode-setup.md) to prepare VS Code for our bootcamp.
+
 ## 🎬 Video showing the setup
 
 A video showing the setup process can be found on YouTube:
 
 [<img src="https://img.youtube.com/vi/oSbdusMN0bA/maxresdefault.jpg" width="480" alt="Video Thumbnail – Mac Setup 101"
 />](https://youtu.be/oSbdusMN0bA)
-
-## Setting up VS Code
-
-Follow [these instructions](./vscode-setup.md) to prepare VS Code for our bootcamp.

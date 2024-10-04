@@ -70,6 +70,10 @@ git clone git@github.com:neuefische/web-test-ssh.git
 6. If you are asked to add github.com to the trusted hosts enter "yes" and press `enter`.
 7. If a new folder called "web-test-ssh" was created your SSH setup was successful! :tada:
 
+## Only On-Site: Setting up ghcd Tool
+
+We use the comand line tool `ghcd` for downloading the challenges. On site cohorts need to set it up with the instructions below. For remote cohorts it should work out of the box, but if you run into issues follow [these instructions](./github-token-setup.md).
+
 ## Setting up VS Code
 
 1. [Download](https://code.visualstudio.com/) visual studio code.
