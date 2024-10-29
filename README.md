@@ -17,7 +17,7 @@ Run it by pressing <kbd>Enter</kbd>.
 
 ### Which commands should I run?
 
-Begin with the [_General Setup_](#-general-setup). You can optionally run the [_Setting nicer macOS Configurations_](#-setting-nicer-macos-configurations) script at any time.
+Begin with the [_General Setup_](#-general-setup).
 
 The [_Setting up git and GitHub_](#-setting-up-git-and-github) script will be used once you'll need to work with git in the command line.
 
