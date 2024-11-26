@@ -17,7 +17,7 @@ Run it by pressing <kbd>Enter</kbd>.
 
 ### Which commands should I run?
 
-Begin with the 💻 [_General Setup_](#-general-setup). Continue with 🐙 [_Setting up git and GitHub_](#-setting-up-git-and-github), and finish with [_Setting up VS Code_](#-setting-up-vs-code).
+Begin with the 💻 [_General Setup_](#-general-setup). Continue with 🐙 [_Setting up git and GitHub_](#-setting-up-git-and-github), and finish with [_Setting up VS Code_](#setting-up-vs-code).
 
 > 💡 You can check the "What does this do?" sections to learn what each script does in detail.
 
