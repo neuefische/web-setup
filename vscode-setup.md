@@ -13,9 +13,11 @@
    - Search for "Default Formatter" and set to "Prettier - Code formatter"
    - Search for "Format On Save" and check the checkbox
    - > 💡 This will set up Visual Studio Code to automatically format your code on save using Prettier.
-5. Open the command palette by pressing <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>.
+5.  Go to iTerm/Git Bash and type `code .` If Visual Studio Code opens then you can skip step 6. 
+
+6. Open the command palette by pressing <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>.
    - Type "shell command" into the prompt.
    - Select _"Shell Command: Install 'code' command in PATH"_ and confirm the installation by pressing <kbd>Enter</kbd>.
-   - > 💡 This allows you to open a folder in Visual Studio Code from the command line with the `code .` command. This might not be needed if vscode is already registered in the PATH. If you don't know if its the case we suggest to execute this step.
-6. (Only for Windows Users) Open te command palette by pressing <kbd>⇧</kbd><kbd>CTRL</kbd><kbd>P</kbd> or <kbd>F1</kbd>.
+   - > 💡 This allows you to open a folder in Visual Studio Code from the command line with the `code .` command.
+7. (Only for Windows Users) Open the command palette by pressing <kbd>⇧</kbd><kbd>CTRL</kbd><kbd>P</kbd> or <kbd>F1</kbd>.
    - Type `Terminal: Select Default Profile` and choose `Git Bash`.
