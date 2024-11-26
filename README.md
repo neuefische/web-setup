@@ -17,9 +17,7 @@ Run it by pressing <kbd>Enter</kbd>.
 
 ### Which commands should I run?
 
-Begin with the [_General Setup_](#-general-setup).
-
-The [_Setting up git and GitHub_](#-setting-up-git-and-github) script will be used once you'll need to work with git in the command line.
+Begin with the 💻 [_General Setup_](#-general-setup). Continue with 🐙 [_Setting up git and GitHub_](#-setting-up-git-and-github), and finish with [_Setting up VS Code_](#-setting-up-vs-code).
 
 > 💡 You can check the "What does this do?" sections to learn what each script does in detail.
 
@@ -71,8 +69,6 @@ The script will copy [zsh configuration files](/configs) from this repository to
 </details>
 
 ## 🐙 Setting up git and GitHub
-
-_This script will be used once you'll need to work with git in the command line._
 
 Sets up git and connects it to GitHub.
 
