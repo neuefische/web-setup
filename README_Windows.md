@@ -3,9 +3,9 @@
 1. [Download](https://gitforwindows.org) git-bash.
 2. Run the installation file:
    1. On the GNU Public License Page continue to the next page.
-   2. Leave the installation path as is, then continue.
+   2. If asked, leave the installation path as is, then continue.
    3. Tick the checkboxes `check daily for Git for Windows updates` and `Add a Git Bash Profile to Windows Terminal` then continue.
-   4. Leave the Start Menu Folder as is and continue.
+   4. If asked, Leave the Start Menu Folder as is and continue.
    5. Choose `Use Vim` as your default editor and continue.
    6. Choose `Override the default branch name for new repositories` and choose the name "main". Then continue.
    7. Choose the default setting `Git from the command line and also from 3rd-party software` and continue.
@@ -15,10 +15,9 @@
    11. Choose `Use MinTTY` and continue.
    12. Choose `Fast-forward or merge` and continue.
    13. Choose `Git Credential Manager` and continue.
-   14. On the page Configuring extra options leave the settings as is and continue.
-   15. On the page Configuring experimental options leave the settings as is and continue.
-   16. Wait for the installation to complete.
-   17. You are done! 🎉
+   14. Choose `Enable file system caching` and continue.
+   15. Wait for the installation to complete.
+   16. You are done! 🎉
 3. Open `git-bash`.
 4. Right click on the openend window and select `options` from the dropdown menu.
 5. On `text` -> `font` click `select...` and set the font size to `16px` or more.
